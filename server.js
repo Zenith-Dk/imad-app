@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    var articleOne : {
+    articleOne : {
         title: 'Article-One | Joseph',
         heading : 'Article One',
         date : 'July 23, 2017',
@@ -24,8 +24,24 @@ var articles = {
                         This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
                     </p> `
         },
-        var articleTwo:{},
-        var articleThree:{}
+     articleTwo:{
+        title: 'Article-Two | Joseph',
+        heading : 'Article TWO',
+        date : 'July 26, 2017',
+        content : `
+                    <p>
+                        This is my second aticle on IMAD. Kindly give your feedback
+                    </p>`    
+    },
+    articleThree:{
+        title: 'Article-Two | Joseph',
+        heading : 'Article TWO',
+        date : 'July 26, 2017',
+        content : `
+                    <p>
+                        This is my third aticle on IMAD. Kindly give your feedback
+                    </p> `     
+         }
 };
 function createTemplate(data){
     var title = data.title;
