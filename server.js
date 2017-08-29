@@ -34,7 +34,7 @@ var articles = {
                     </p>`    
     },
     'article-three':{
-        title: 'Article-Two | Joseph',
+        title: 'Article-Three | Joseph',
         heading : 'Article TWO',
         date : 'July 27, 2017',
         content : `
