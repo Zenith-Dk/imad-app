@@ -24,7 +24,7 @@ var articles = {
                         This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
                     </p> `
         },
-     articleTwo:{
+    articleTwo:{
         title: 'Article-Two | Joseph',
         heading : 'Article TWO',
         date : 'July 26, 2017',
