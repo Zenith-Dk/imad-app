@@ -5,23 +5,27 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne ={
-    title: 'Article-One | Joseph',
-    heading : 'Article One',
-    date : 'July 23, 2017',
-    content : `
-                <p>
-                    This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
-                    This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
-                </p>
-                <p>
-                    This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
-                    This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
-                </p>
-                <p>
-                    This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
-                    This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
-                </p> `
+var articles = {
+    var articleOne : {
+        title: 'Article-One | Joseph',
+        heading : 'Article One',
+        date : 'July 23, 2017',
+        content : `
+                    <p>
+                        This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
+                        This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
+                    </p>
+                    <p>
+                        This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
+                        This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
+                    </p>
+                    <p>
+                        This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
+                        This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
+                    </p> `
+        },
+        var articleTwo:{},
+        var articleThree:{}
 };
 function createTemplate(data){
     var title = data.title;
