@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    articleOne : {
+    'article-one' : {
         title: 'Article-One | Joseph',
         heading : 'Article One',
         date : 'July 23, 2017',
@@ -24,7 +24,7 @@ var articles = {
                         This is my first aticle on IMAD.This is my first aticle on IMAD.This is my first aticle on IMAD.
                     </p> `
         },
-    articleTwo:{
+    'article-two':{
         title: 'Article-Two | Joseph',
         heading : 'Article TWO',
         date : 'July 26, 2017',
@@ -33,7 +33,7 @@ var articles = {
                         This is my second aticle on IMAD. Kindly give your feedback
                     </p>`    
     },
-    articleThree:{
+    'article-three':{
         title: 'Article-Two | Joseph',
         heading : 'Article TWO',
         date : 'July 27, 2017',
@@ -87,8 +87,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one',function(req,res){
-    res.send(createTemplate(articleOne));
+app.get('/:articleName',function(req,res){
+    // aarticleName == article-one
+    //articles[articleName] = { } content objec for article one
+   var articleName = req.params.articleName;
+   res.send(createTemplate(articles[articleName]));
 });
 app.get('/article-two',function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
