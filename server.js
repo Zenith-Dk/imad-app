@@ -35,7 +35,7 @@ var articles = {
     },
     'article-three':{
         title: 'Article-Three | Joseph',
-        heading : 'Article TWO',
+        heading : 'Article Three',
         date : 'July 27, 2017',
         content : `
                     <p>
